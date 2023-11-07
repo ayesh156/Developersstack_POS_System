@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="555.0" prefWidth="1015.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.devstack.pos.controller.LoginFormController">
+   <children>
+      <AnchorPane prefHeight="576.0" prefWidth="421.0">
+         <children>
+            <Label layoutX="155.0" layoutY="72.0" text="Welcome to" />
+            <ImageView fitHeight="68.0" fitWidth="192.0" layoutX="109.0" layoutY="81.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../asserts/software_logo.png" />
+               </image>
+            </ImageView>
+            <TextField layoutX="34.0" layoutY="188.0" prefHeight="50.0" prefWidth="350.0" promptText="Username" />
+            <PasswordField layoutX="34.0" layoutY="256.0" prefHeight="50.0" prefWidth="350.0" promptText="Password" />
+            <JFXButton buttonType="RAISED" layoutX="34.0" layoutY="347.0" prefHeight="50.0" prefWidth="350.0" style="-fx-background-color: #2980B9;" text="Sign In" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="422.0" prefHeight="576.0" prefWidth="597.0">
+         <children>
+            <ImageView fitHeight="583.0" fitWidth="605.0" layoutX="-3.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../asserts/login_bg.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
