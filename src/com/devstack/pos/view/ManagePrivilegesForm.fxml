@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="privilegesContext" prefHeight="555.0" prefWidth="1015.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.devstack.pos.controller.ManagePrivilegesFormController">
+   <children>
+      <AnchorPane prefHeight="55.0" prefWidth="1015.0" style="-fx-background-color: #34495E;">
+         <children>
+            <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="16.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/icons/menu.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="12.0" fitWidth="12.0" layoutX="978.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/icons/down_arrow.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label layoutX="77.0" layoutY="15.0" text="Privileges" textFill="WHITE">
+               <font>
+                  <Font name="Inter SemiBold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="827.0" layoutY="18.0" text="Ayesh Chathuranga" textFill="WHITE">
+               <font>
+                  <Font name="Inter SemiBold" size="15.0" />
+               </font>
+            </Label>
+            <TextField layoutX="609.0" layoutY="13.0" prefHeight="30.0" prefWidth="200.0" />
+         </children>
+      </AnchorPane>
+      <JFXComboBox fx:id="cmbAccessPoint" layoutX="19.0" layoutY="78.0" prefHeight="34.0" prefWidth="179.0" promptText="Access Point" />
+      <JFXButton layoutX="40.0" layoutY="6.0" onAction="#backToHomeOnAction" text="&lt;" textFill="WHITE">
+         <font>
+            <Font name="Inter Regular" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TextField layoutX="17.0" layoutY="130.0" prefHeight="34.0" prefWidth="372.0" promptText="Search here">
+         <font>
+            <Font name="Inter Medium" size="15.0" />
+         </font>
+      </TextField>
+      <TableView fx:id="tblAccessPrivileges" layoutX="18.0" layoutY="180.0" prefHeight="365.0" prefWidth="980.0">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="85.0" text="#Id" />
+            <TableColumn fx:id="colAccessPoint" prefWidth="362.0" text="Access Point Name" />
+            <TableColumn fx:id="colOperation" prefWidth="532.0" text="Operation" />
+         </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="623.0" layoutY="80.0" onAction="#submitData" prefHeight="34.0" prefWidth="179.0" style="-fx-background-color: #3498DB;" text="Submit Data" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXCheckBox fx:id="rBtnCreate" layoutX="218.0" layoutY="86.0" prefHeight="24.0" text="CREATE">
+         <font>
+            <Font name="Inter Regular" size="15.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXCheckBox fx:id="rBtnRead" layoutX="313.0" layoutY="87.0" prefHeight="24.0" text="READ">
+         <font>
+            <Font name="Inter Regular" size="15.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXCheckBox fx:id="rBtnUpdate" layoutX="392.0" layoutY="87.0" prefHeight="24.0" text="UPDATE">
+         <font>
+            <Font name="Inter Regular" size="15.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXCheckBox fx:id="rBtnDelete" layoutX="493.0" layoutY="87.0" prefHeight="24.0" text="DELETE">
+         <font>
+            <Font name="Inter Regular" size="15.0" />
+         </font>
+      </JFXCheckBox>
+   </children>
+</AnchorPane>

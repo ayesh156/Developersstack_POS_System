@@ -1,7 +1,7 @@
 <component name="libraryTable">
-  <library name="mysql-connector">
+  <library name="jBCrypt-0.4.3">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/lib/mysql/mysql-connector.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/bcrypt/jBCrypt-0.4.3.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

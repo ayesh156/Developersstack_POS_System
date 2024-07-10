@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="adminPortalContext" prefHeight="555.0" prefWidth="1015.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.devstack.pos.controller.AdminPortalFormController">
+   <children>
+      <AnchorPane prefHeight="55.0" prefWidth="1015.0" style="-fx-background-color: #34495E;">
+         <children>
+            <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="16.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/icons/menu.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="12.0" fitWidth="12.0" layoutX="978.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/icons/down_arrow.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label layoutX="57.0" layoutY="15.0" text="Admin-portal" textFill="WHITE">
+               <font>
+                  <Font name="Inter SemiBold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="827.0" layoutY="18.0" text="Ayesh Chathuranga" textFill="WHITE">
+               <font>
+                  <Font name="Inter SemiBold" size="15.0" />
+               </font>
+            </Label>
+            <TextField layoutX="609.0" layoutY="13.0" prefHeight="30.0" prefWidth="200.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="14.0" layoutY="107.0" prefHeight="105.0" prefWidth="225.0" style="-fx-background-color: #ECF0F1;">
+         <children>
+            <AnchorPane prefHeight="105.0" prefWidth="5.0" style="-fx-background-color: #C0392B;" />
+            <Label layoutX="14.0" layoutY="7.0" text="Invoices">
+               <font>
+                  <Font name="Inter Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="28.0" text="500">
+               <font>
+                  <Font name="Inter Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="86.0" text="Today :">
+               <font>
+                  <Font name="Inter Regular" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="53.0" layoutY="87.0" text="150">
+               <font>
+                  <Font name="Inter Regular" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="132.0" layoutY="87.0" text="This Month :">
+               <font>
+                  <Font name="Inter Regular" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="199.0" layoutY="87.0" text="150">
+               <font>
+                  <Font name="Inter Regular" size="11.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="77.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../../../../Photos/Resource/dev%20pos/trending_up.png" />
+               </image>
+            </ImageView>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </AnchorPane>
+      <AnchorPane layoutX="269.0" layoutY="107.0" prefHeight="105.0" prefWidth="225.0" style="-fx-background-color: #ECF0F1;">
+         <children>
+            <AnchorPane prefHeight="105.0" prefWidth="5.0" style="-fx-background-color: #16A085;" />
+            <Label layoutX="14.0" layoutY="7.0" text="Income">
+               <font>
+                  <Font name="Inter Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="28.0" text="5M">
+               <font>
+                  <Font name="Inter Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="86.0" text="Today :">
+               <font>
+                  <Font name="Inter Regular" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="53.0" layoutY="87.0" text="150K">
+               <font>
+                  <Font name="Inter Regular" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="132.0" layoutY="87.0" text="This Month :">
+               <font>
+                  <Font name="Inter Regular" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="199.0" layoutY="87.0" text="150">
+               <font>
+                  <Font name="Inter Regular" size="11.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="82.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../../../../Photos/Resource/dev%20pos/trending_up.png" />
+               </image>
+            </ImageView>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </AnchorPane>
+      <AnchorPane layoutX="522.0" layoutY="106.0" prefHeight="105.0" prefWidth="225.0" style="-fx-background-color: #ECF0F1;">
+         <children>
+            <AnchorPane prefHeight="105.0" prefWidth="5.0" style="-fx-background-color: #8E44AD;" />
+            <Label layoutX="14.0" layoutY="7.0" text="Customers">
+               <font>
+                  <Font name="Inter Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="28.0" text="50M">
+               <font>
+                  <Font name="Inter Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="90.0" text="GOLD :">
+               <font>
+                  <Font name="Inter Regular" size="9.0" />
+               </font>
+            </Label>
+            <Label layoutX="43.0" layoutY="90.0" text="150">
+               <font>
+                  <Font name="Inter Regular" size="9.0" />
+               </font>
+            </Label>
+            <Label layoutX="158.0" layoutY="91.0" text="SILVER :">
+               <font>
+                  <Font name="Inter Regular" size="9.0" />
+               </font>
+            </Label>
+            <Label layoutX="197.0" layoutY="91.0" text="150">
+               <font>
+                  <Font name="Inter Regular" size="9.0" />
+               </font>
+            </Label>
+            <Label layoutX="74.0" layoutY="90.0" text="PLATINUM :">
+               <font>
+                  <Font name="Inter Regular" size="9.0" />
+               </font>
+            </Label>
+            <Label layoutX="127.0" layoutY="91.0" text="150">
+               <font>
+                  <Font name="Inter Regular" size="9.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </AnchorPane>
+      <AnchorPane layoutX="774.0" layoutY="105.0" prefHeight="105.0" prefWidth="225.0" style="-fx-background-color: #ECF0F1;">
+         <children>
+            <AnchorPane prefHeight="105.0" prefWidth="5.0" style="-fx-background-color: #F39C12;" />
+            <Label layoutX="14.0" layoutY="7.0" text="Suppliers">
+               <font>
+                  <Font name="Inter Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="28.0" text="500">
+               <font>
+                  <Font name="Inter Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </AnchorPane>
+      <BarChart layoutX="8.0" layoutY="217.0" prefHeight="350.0" prefWidth="758.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <TabPane layoutX="763.0" layoutY="216.0" prefHeight="337.0" prefWidth="242.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Expiring soon">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="341.0" prefWidth="254.0" style="-fx-background-color: #ECF0F1;" />
+            </content>
+          </Tab>
+          <Tab text="Lower Quantity">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="337.0" prefWidth="204.0" style="-fx-background-color: #ECF0F1;" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <JFXButton layoutX="14.0" layoutY="66.0" onAction="#userManagementOnAction" style="-fx-background-color: #1abc9c;" text="User Management" textFill="WHITE">
+         <font>
+            <Font size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="135.0" layoutY="66.0" onAction="#userRolesAndAuthoritiesOnAction" style="-fx-background-color: #1abc9c;" text="User Roles &amp; Authorities" textFill="WHITE">
+         <font>
+            <Font size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="286.0" layoutY="66.0" onAction="#incomeAndReportsOnAction" style="-fx-background-color: #1abc9c;" text="Income &amp; Reports" textFill="WHITE">
+         <font>
+            <Font size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="404.0" layoutY="66.0" onAction="#manageInventoryOnAction" style="-fx-background-color: #1abc9c;" text="Manage Inventory" textFill="WHITE">
+         <font>
+            <Font size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="524.0" layoutY="66.0" onAction="#customerManagementOnAction" style="-fx-background-color: #1abc9c;" text="Customer Management" textFill="WHITE">
+         <font>
+            <Font size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="672.0" layoutY="66.0" onAction="#dealsAndDiscountsOnAction" style="-fx-background-color: #1abc9c;" text="Deals &amp; Discounts" textFill="WHITE">
+         <font>
+            <Font size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="791.0" layoutY="66.0" onAction="#userActivitiesOnAction" style="-fx-background-color: #1abc9c;" text="User Activities" textFill="WHITE">
+         <font>
+            <Font size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="888.0" layoutY="66.0" onAction="#reportsAndStatisticsOnAction" style="-fx-background-color: #1abc9c;" text="Reports &amp; Statistics" textFill="WHITE">
+         <font>
+            <Font size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

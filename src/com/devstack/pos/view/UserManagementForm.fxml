@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="userManagementContext" prefHeight="555.0" prefWidth="1015.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.devstack.pos.controller.UserManagementFormController">
+   <children>
+      <AnchorPane prefHeight="55.0" prefWidth="1015.0" style="-fx-background-color: #34495E;">
+         <children>
+            <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="16.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/icons/menu.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="12.0" fitWidth="12.0" layoutX="978.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/icons/down_arrow.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label layoutX="73.0" layoutY="15.0" text="User Management" textFill="WHITE">
+               <font>
+                  <Font name="Inter SemiBold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="827.0" layoutY="18.0" text="Ayesh Chathuranga" textFill="WHITE">
+               <font>
+                  <Font name="Inter SemiBold" size="15.0" />
+               </font>
+            </Label>
+            <TextField layoutX="609.0" layoutY="13.0" prefHeight="30.0" prefWidth="200.0" />
+            <JFXButton layoutX="36.0" layoutY="6.0" onAction="#backToHomeOnAction" text="&lt;" textFill="WHITE">
+               <font>
+                  <Font name="Inter Regular" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="14.0" layoutY="107.0" onMouseClicked="#manageSystemUserOnAction" prefHeight="38.0" prefWidth="225.0" style="-fx-background-color: #ECF0F1;">
+         <children>
+            <AnchorPane prefHeight="40.0" prefWidth="7.0" style="-fx-background-color: #C0392B;" />
+            <Label layoutX="16.0" layoutY="11.0" text="Manage System Users">
+               <font>
+                  <Font name="Inter Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </AnchorPane>
+      <AnchorPane layoutX="269.0" layoutY="107.0" onMouseClicked="#newUserRoleOnAction" prefHeight="28.0" prefWidth="225.0" style="-fx-background-color: #ECF0F1;">
+         <children>
+            <AnchorPane prefHeight="40.0" prefWidth="7.0" style="-fx-background-color: #16A085;" />
+            <Label layoutX="16.0" layoutY="11.0" text="New User Role">
+               <font>
+                  <Font name="Inter Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -14,7 +14,7 @@ import java.util.Set;
 public class User implements SuperEntity {
     @Id
     @Column(name = "property_id")
-    private Integer propertyId;
+    private Long propertyId;
     @Column(name = "username", nullable = false)
     private String username;
     @Column(name = "password", nullable = false)
@@ -26,5 +26,5 @@ public class User implements SuperEntity {
 
     @ManyToOne
     @JoinColumn(name = "role_id")
-    private Set<UserRole> userRoles;
+    private UserRole userRole;
 }
